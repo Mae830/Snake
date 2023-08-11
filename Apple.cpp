@@ -3,7 +3,7 @@
 Apple::Apple(int len, int width) {
 	circle = new sf::CircleShape();
 	circle->setRadius(25);
-	circle->setFillColor(sf::Color(255, 0, 0, 250));
+	circle->setFillColor(sf::Color(255, 0, 100, 250));
 }
 
 void Apple::SetApplePos(int len, int width) {

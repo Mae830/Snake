@@ -5,6 +5,9 @@
 Board::Board(int size){
 	switch (size) {
 	case 0:
+		this->size = size;
+		this->boardLength = 500;
+		this->boardWidth = 500;
 		for (int i = 0; i < 10; i++) {
 			int xposition = 0;
 			int yposition = i * 50;
@@ -29,8 +32,21 @@ Grass Board::getPlot(int i, int j) {
 	return smallGround[i][j];
 }
 
-//Need to refractor this
+
 int* Board::getdimensions() {
-	static int dim[2] = { 10, 10 };
+
+	static int dim[2];
+	if (size == 0) {
+		dim[0] = 10;
+		dim[1] = 10;
+	}
 	return dim;
+}
+
+int Board::getWidth() {
+	return boardWidth;
+}
+
+int Board::getLength() {
+	return boardLength;
 }

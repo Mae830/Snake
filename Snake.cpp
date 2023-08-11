@@ -5,7 +5,7 @@
 sf::Shape* Snake::Head() {
 	sf::RectangleShape* rec = new sf::RectangleShape();
 	rec->setSize(sf::Vector2f(50, 50));
-	rec->setFillColor(sf::Color(0, 0, 255, 250));
+	rec->setFillColor(sf::Color(0, 100, 255, 250));
 	rec->setPosition(150, 200);
 	rec->setPosition(150, 200);
 	return rec;
@@ -14,7 +14,7 @@ sf::Shape* Snake::Head() {
 sf::Shape* Snake::Mid(){
 	sf::RectangleShape* rec = new sf::RectangleShape();
 	rec->setSize(sf::Vector2f(50, 50));
-	rec->setFillColor(sf::Color(255, 255, 0, 250));
+	rec->setFillColor(sf::Color(0, 100, 255, 250));
 	rec->setPosition(100, 200);
 	return rec;
 }
@@ -24,7 +24,7 @@ sf::Shape* Snake::Mid(){
 sf::Shape* Snake::Tail() {
 	sf::RectangleShape* rec = new sf::RectangleShape();
 	rec->setSize(sf::Vector2f(50, 50));
-	rec->setFillColor(sf::Color(255, 0, 0, 250));
+	rec->setFillColor(sf::Color(0, 100, 255, 250));
 	rec->setPosition(50, 200);
 	return rec;
 }
